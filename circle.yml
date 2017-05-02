@@ -1,0 +1,17 @@
+machine:
+  node:
+    version:6.9.5
+
+dependencies:
+  override:
+    -npm install --dev
+
+test:
+  override:
+    - npm test
+
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: my-redux-app # appname must not include upper-case characters
