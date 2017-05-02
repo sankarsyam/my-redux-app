@@ -9,5 +9,4 @@ class CoursesPage extends React.Component{
         );
     }
 }
-
 export default CoursesPage;
