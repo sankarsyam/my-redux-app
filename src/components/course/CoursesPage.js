@@ -20,7 +20,6 @@ class CoursesPage extends React.Component{
         this.props.dispatch(courseActions.createCourse(this.state.course));
     }
     courseRow(course,index){
-        alert(course.title);
         return <div kay={index}>{course.title}</div>;
     }
     render(){
